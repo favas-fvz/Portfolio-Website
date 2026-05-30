@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Director & Graphic Designer | Portfolio</title>
+    <meta name="description" content="Portfolio of a passionate graphic designer and creative director crafting digital experiences.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+    <!-- Background Glow Effects -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Favas.Design</a>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="btn-primary btn-small">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <p class="hero-subtitle">Hi, I'm Favas. A multidisciplinary</p>
+            <h1 class="hero-title">Graphic Designer <br> <span class="text-gradient">& Creative Director</span></h1>
+            <p class="hero-desc">I craft visually stunning, engaging, and purposeful digital experiences that bring brands to life.</p>
+            <a href="#work" class="btn-primary btn-large">View My Work</a>
+        </div>
+    </header>
+
+    <section id="work" class="work-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Selected Works</h2>
+                <p>A collection of my recent projects ranging from branding to video editing.</p>
+                <div class="work-filters">
+                    <button class="filter-btn active" data-filter="design">Design Works</button>
+                    <button class="filter-btn" data-filter="video">Video Works</button>
+                </div>
+            </div>
+
+            <!-- Design Works Category -->
+            <div id="design-gallery" class="gallery-grid mb-6">
+                <!-- Items injected via JS -->
+            </div>
+
+            <!-- Video Works Category -->
+            <div id="video-gallery" class="gallery-grid" style="display: none;">
+                <!-- Items injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>Behind the Designs</h2>
+                <p>With over 3 years of experience in the media industry, I specialize in graphic design, photography, and video production. I believe that high-quality media is not just about capturing beautiful visuals, but about empowering brands and helping businesses thrive.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-cta">
+                <h2>Ready to start your next project?</h2>
+                <a href="mailto:hello@example.com" class="btn-primary btn-large mt-2">favasgafoornk@gmail.com</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Favas.Design. All rights reserved.</p>
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/favas-g-8438b6294/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Portfolio Image Fullscreen" style="display: none;">
+        <video class="lightbox-img" id="lightbox-video" src="" controls style="display: none;"></video>
+    </div>
+
+    <script src="script.js?v=4"></script>
+</body>
+</html>
